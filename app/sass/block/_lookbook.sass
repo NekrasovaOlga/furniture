@@ -1,0 +1,78 @@
+.lookbook
+    position: relative
+    align-items: center
+    width: 100%
+    display: flex
+    align-items: center
+    height: 618px
+    justify-content: center
+    margin-bottom: 159px
+    &-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        margin-top: 59px
+        li
+            list-style: none
+            width: 6px
+            height: 6px
+            background: #D8D8D8
+            border-radius: 50%
+            margin-right: 24px
+            font-size: 0.1px
+            top: 0
+            left: 0
+        .slick-active
+            width: 12px
+            height: 12px
+            background: $red
+            
+    &-item
+        width: 536px
+        height: 500px
+        position: relative
+        opacity: 0.5
+        outline: none
+        transition: 0.1s all
+        &__title
+            width: 512px
+            height: 163px
+            display: flex
+            opacity: 0
+            position: absolute
+            align-items: center
+            justify-content: center
+            font-size: 2em
+            color: $gray
+            right: 0
+            top: 0
+            background: #ffffff
+        &__nubmer
+            background: $red
+            color: #ffffff
+            bottom: 0
+            left: 0
+            position: absolute
+            display: flex
+            opacity: 0
+            align-items: center
+            justify-content: center
+            font-size: 1.9em
+            width: 104px
+            height: 104px
+        img
+            width: 100%
+            height: auto
+
+.slick-current
+    width: 784px
+    height: 618px
+    opacity: 1
+    margin: 0 32px
+    outline: none
+    .lookbook-item__title, .lookbook-item__nubmer
+        opacity: 1
+
+
+
