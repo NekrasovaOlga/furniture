@@ -1,0 +1,56 @@
+.footer
+    display: flex
+    position: relative
+    justify-content: space-between
+    border-bottom: 1px solid #D8D8D8
+    padding-bottom: 64px
+    position: relative
+    &__title
+        font-size: 1.13em
+        color: $gray
+        line-height: 27px
+        margin-bottom: 54px
+    &__block
+        display: flex
+        &-item
+            display: flex
+            flex-direction: column
+            line-height: 40px
+            font-size: 0.9em
+            color: $graylight
+            margin-right: 84px
+            p
+                line-height: 28px
+        &-link
+            display: inline-block
+            color: $graylight
+        h4
+            color: $gray
+    &__forms
+        &-item
+            display: flex
+            flex-direction: column
+            input
+                width: 412px
+                height: 40px
+                margin-bottom: 33px
+                border: none
+                border-bottom: 1px solid $red
+                outline: none
+                line-height: 21px
+                font-size: 0.9em
+                color: $black
+                &::placeholder
+                    color: $gray
+    &__description
+        display: flex
+        padding: 36px 0 40px 0
+        justify-content: space-between
+        h4
+            color: $graylight
+            font-size: 0.8em
+        &-links
+            max-width: 181px
+            width: 100%
+            display: flex
+            justify-content: space-between
