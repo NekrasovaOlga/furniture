@@ -1,0 +1,81 @@
+.subscription
+    position: relative
+    margin-bottom: 160px
+    
+    &-section
+        position: relative
+    &__items
+        max-width: 680px
+        width: 100%
+        background: $red
+        padding: 106px 104px 143px 104px
+        color: #ffffff
+        z-index: 5
+    &__subtitle
+        font-size: 2em
+    &__title
+        font-size: 4em
+        padding-bottom: 26px
+        position: relative
+        border-bottom: 4px solid #fff
+        width: 210px
+        margin-bottom: 36px
+    &__description
+        max-width: 250px
+        width: 100%
+        margin-bottom: 40px
+        display: inline-block
+    &__from
+        display: flex
+        flex-direction: column
+        input
+            height: 62px
+            margin-bottom: 8px
+            background: $coral
+            padding: 20px 32px
+            color: #ffffff
+            &::placeholder
+                color: #ffffff
+            &:active, &:focus
+                background: #F55C46
+                border: 1px solid #ffffff
+    &__btn
+        background: #1D2539
+        font-weight: bold
+    &__conditions
+        display: inline-block
+        margin-top: 32px
+        padding-left: 42px
+        font-size: 15px
+        line-height: 28px
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            width: 24px
+            height: 24px
+            background: #ffffff
+            border-radius: 50%
+            left: 0
+            top: 5px
+        &::before
+            position: absolute
+            content: ''
+            width: 8px
+            height: 8px
+            background: $red
+            border-radius: 50%
+            left: 8px
+            top: 13px
+            z-index: 5
+    &__img
+        position: absolute
+        right: 0
+        background: #ECECEE
+        width: calc(100% - 35%)
+        min-height: 790px
+        top: 0
+        z-index: -1
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
