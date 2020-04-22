@@ -1,0 +1,76 @@
+.product
+    display: flex
+    justify-content: space-between
+    &__box
+        &-main
+            display: flex
+            flex: 2
+            img
+                width: 100%
+        &-img
+            display: flex
+            flex-direction: column
+            flex: 1
+            align-items: flex-end
+            img
+                margin-bottom: 48px
+                width: 240px
+                height: 240px
+                &:hover
+                    box-shadow: 0px 45px 79px rgba(198, 206, 215, 0.5)
+        &-color
+            margin: 49px 0 71px 0
+            display: flex
+            
+    &__color
+        width: 16px
+        height: 16px
+        display: inline-block
+        border-radius: 50%
+        position: relative
+        margin-right: 39px
+        &-blue
+            background: #7FAADB
+        &-black
+            background: #2C2E3F
+        &-orange
+            background: #FFB585
+        &-green
+            background: #9CE0D8
+        &::before
+            position: absolute
+            content: ''
+            background: #F5F5F7
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            display: none
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+    &__card
+        display: flex
+        flex-direction: column
+        flex: 1
+        margin-left: 16px
+        &-price
+            color: $red
+            font-size: 2em
+            font-weight: 600
+            margin-bottom: 5px
+        &-title
+            font-size: 3em
+            line-height: 50px
+            color: $gray
+            margin-bottom: 47px
+        &-txt
+            margin-top: 68px
+            font-size: 0.9em
+            letter-spacing: 1.83333px
+            text-transform: uppercase
+            color: $gray
+            opacity: 0.5
+
+input[type='radio']:checked + .product__color
+    &::before
+        display: block
