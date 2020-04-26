@@ -1,0 +1,55 @@
+.question
+    position: relative
+    display: flex
+    justify-content: space-between
+    &__title
+        font-size: 2.5em
+        padding-bottom: 36px
+        margin-bottom: 63px
+        
+        &::after
+            width: 64px
+            height: 2px
+    &__tab
+        max-width: 620px
+        width: 100%
+        position: relative
+        margin-bottom: 40px
+        border-bottom: 1px solid #E3E3E3
+        padding-bottom: 20px
+    &__label
+        height: 52px
+        display: inline-block
+        position: relative
+        width: 100%
+        font-weight: 500
+        font-size: 24px
+        line-height: 36px
+        
+        &::after
+            position: absolute
+            content: '+'
+            right: 0
+            top: 0
+            color: #8F91A3
+            font-size: 2em
+            font-weight: 400
+            transition: all 0.5s
+    &__content
+        overflow: hidden
+        position: relative
+        line-height: 28px
+        max-height: 0
+        transition: max-height 0.5s
+        
+
+input[type="checkbox"]:checked ~ .question__content
+    display: block
+    max-height: 10em
+    
+    
+    
+input[type="checkbox"]:checked + .question__label
+    border: none
+    &::after
+        transform: rotate(45deg)

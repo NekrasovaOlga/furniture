@@ -1,0 +1,44 @@
+.faq
+    display: flex
+    position: relative
+    justify-content: space-between
+    margin-bottom: 160px
+    height: 100vh
+    &__img
+        width: 45%
+        background: url(../img/block1.png)
+    &__block
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__subtitle
+        color: $red
+        font-weight: 400
+    &__title
+        width: 512px
+        padding-bottom: 0
+        &::after
+            display: none
+    &__description
+        max-width: 376px
+        width: 100%
+        color: $graylight
+        line-height: 28px
+    &__form
+        position: relative
+        margin-top: 76px
+    &__input
+        display: block
+        border: 2px solid $red
+        width: 100%
+        padding: 40px
+    &__btn
+        width: 100px
+        height: 100px
+        background: url(../img/search.svg)
+        background-repeat: no-repeat
+        background-position: center
+        position: absolute
+        right: 0
+        top: 0

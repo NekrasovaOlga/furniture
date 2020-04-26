@@ -1,0 +1,114 @@
+.filter
+    padding-bottom: 100px
+    display: flex
+    &__list
+        max-width: 200px
+        width: 100%
+        margin-right: 96px
+        &-box
+            padding-bottom: 10px
+            border-bottom: 1px solid #8F91A3
+            display: block
+            color: #8F91A3
+            position: relative
+            &::before, &::after
+                position: absolute
+                content: ''
+                width: 12px
+                height: 2px
+                background: #8F91A3
+                right: 0
+            &::after
+                transform: rotate(90deg)
+                top: 45%
+                transition: 0.5s all
+            &::before
+                top: 50%
+                transform: translate(0,-50%)
+    &__material
+        display: flex
+        flex-direction: column
+        padding: 14px 0 24px 24px
+        color: $graylight
+        font-size: 0.75em
+        line-height: 30px
+        opacity: 0.7
+        &-item
+            display: block
+            position: relative
+            &::before, &::after
+                position: absolute
+                content: ''
+                top: 20%
+            &::before
+                width: 16px
+                height: 16px
+                right: 0
+                border: 1px solid #DBDBDB
+            &::after
+                background: $red
+                width: 6px
+                height: 6px
+                top: 40%
+                right: 6px
+                display: none
+    &__link
+        margin-top: 23px
+        font-weight: 500
+        color: #141517
+        display: block
+        font-size: 0.8em
+    &__box
+        display: flex
+        justify-content: space-between
+        margin-bottom: 108px
+        &-img
+            width: 250px
+            height: 176px
+            background: #E9F1F3
+            margin-right: 20px
+    &__text
+        &-item
+            display: flex
+        &-title
+            width: 136px
+            h4
+                color: $black
+                font-size: 1em
+                font-weight: bold
+                margin-bottom: 6px
+            span
+                color: $graylight
+                font-size: 0.7em
+                margin-bottom: 23px
+                display: inline-block
+        &-price
+            color: $black
+            font-size: 1em
+            font-weight: bold
+    &__result
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 100%
+    &__textbox
+        max-width: 220px
+        width: 100%
+        &-txt
+            font-size: 0.8em
+            color: $graylight
+            line-height: 28px
+            margin-bottom: 33px
+        &-btn
+            font-size: 0.8em
+            color: $gray
+
+input[type='checkbox']:checked + .filter__list-box
+    &::after
+        transform: rotate(0deg)
+
+input[type='checkbox']:checked + .filter__material-item    
+    &::after
+        display: block
+    &::before
+        border-color: $red      

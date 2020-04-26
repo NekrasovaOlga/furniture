@@ -85,9 +85,16 @@
 
     <!--Начало секции магазин-->
     <section class="magazine-section">
-        <div class="magazine contain">
+       <div class="magazine__box contain">
+           <div class="magazine__item">
+               <label for="desk"><input type="radio" name="tabList" id="desk"><span class="magazine__link">DESCRIPTION</span></label>
+               <label for="info"><input type="radio" name="tabList" id="info"><span class="magazine__link">INFO</span></label>
+               <label for="coll"><input type="radio" name="tabList" id="coll"><span class="magazine__link">COLLECTION</span></label>
+               <label for="review"><input type="radio" name="tabList" id="review"><span class="magazine__link">REVIEW</span></label>
+           </div>
+        <div class="magazine">
             <div class="magazine__txt">
-                <span class="magazine__subtitle">Description</span>
+                <span class="subtitle">Description</span>
                 <h3 class="title">Bjorg chair.</h3>
                 <span class="magazine__description">All trend spaces have a common denominator: chairs that are icons. And this chair has everything to become that, an icon of design. Its legs and seat are made of solid beech wood ad its backrest, with rounded shapes, is made of polypropylene. Its design favors comfort while adding great aesthetic value to any interior design.</span>
                
@@ -103,9 +110,117 @@
             </div>
         </div>
         <!-- /.magazine -->
+       </div>
     </section>
     <!-- /.magazine-section -->
 <!--Конец секции магазин-->
+
+<!--Начало секции фильтр-->
+    <section class="filter-section contain">
+        <span class="subtitle">Our Suggestions</span>
+        <h3 class="title">You may also like</h3>
+        <div class="filter "> 
+            <div class="filter__list">
+                <label for="filter"><input type="checkbox" name="filter" id="filter"><span class="filter__list-box">Filter</span></label>
+                <a href="#" class="filter__link">New in</a>
+                <a href="#" class="filter__link">Materials</a>
+                <div class="filter__material">
+                    <label for="item1"><input type="checkbox" name="material" id="item1"><span class="filter__material-item">
+                        Synthetic skin (6)
+                    </span></label>
+                    <label for="item2"><input type="checkbox" name="material" id="item2"><span class="filter__material-item">
+                        Metal (88)
+                    </span></label>
+                    <label for="item3"><input type="checkbox" name="material" id="item3"><span class="filter__material-item">
+                        Wooden (158)
+                    </span></label>
+                    <label for="item4"><input type="checkbox" name="material" id="item4"><span class="filter__material-item">
+                        Fabric (294)
+                    </span></label>
+                    <label for="item5"><input type="checkbox" name="material" id="item5"><span class="filter__material-item">
+                        Polyurethane (25)
+                    </span></label>
+                    <label for="item6"><input type="checkbox" name="material" id="item6"><span class="filter__material-item">
+                        Viscoelastic (36)
+                    </span></label>
+                    <label for="item7"><input type="checkbox" name="material" id="item7"><span class="filter__material-item">
+                        Natural fiber (17)
+                    </span></label>
+                    <label for="item8"><input type="checkbox" name="material" id="item8"><span class="filter__material-item">
+                        Synthetic fiber (20)
+                    </span></label>
+                    <label for="item9"><input type="checkbox" name="material" id="item9"><span class="filter__material-item">
+                        Natural skin (7)
+                    </span></label>
+                    <label for="item10"><input type="checkbox" name="material" id="item10"><span class="filter__material-item">
+                        Foam (77)
+                    </span></label>
+                </div>
+                <a href="#" class="filter__link">Sale Off</a>
+            </div>
+            <!-- /.filter-list -->
+            <div class="filter__result">
+                <div class="filter__box">
+                    <div class="filter__box-img"><img src="" alt=""></div>
+                    <div class="filter__textbox">
+                        <div class="filter__text-item">
+                            <div class="filter__text-title">
+                                <h4 >Patio armchair, blue</h4>
+                                <span class="filter__text-description">Within 10 days</span>
+                            </div>
+                            <span class="filter__text-price">386 €</span>
+                        </div>
+                        <p class="filter__textbox-txt">Armchair in scandinavian design upholstered with fabric Miss pattern. Backrest with decorative buttons. Legs in natural wood.</p>
+                        <a href="" class="filter__textbox-btn">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__box-img"><img src="" alt=""></div>
+                    <div class="filter__textbox">
+                        <div class="filter__text-item">
+                            <div class="filter__text-title">
+                                <h4 >Patio armchair, blue</h4>
+                                <span class="filter__text-description">Within 10 days</span>
+                            </div>
+                            <span class="filter__text-price">386 €</span>
+                        </div>
+                        <p class="filter__textbox-txt">Armchair in scandinavian design upholstered with fabric Miss pattern. Backrest with decorative buttons. Legs in natural wood.</p>
+                        <a href="" class="filter__textbox-btn">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__box-img"><img src="" alt=""></div>
+                    <div class="filter__textbox">
+                        <div class="filter__text-item">
+                            <div class="filter__text-title">
+                                <h4 >Patio armchair, blue</h4>
+                                <span class="filter__text-description">Within 10 days</span>
+                            </div>
+                            <span class="filter__text-price">386 €</span>
+                        </div>
+                        <p class="filter__textbox-txt">Armchair in scandinavian design upholstered with fabric Miss pattern. Backrest with decorative buttons. Legs in natural wood.</p>
+                        <a href="" class="filter__textbox-btn">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__box-img"><img src="" alt=""></div>
+                    <div class="filter__textbox">
+                        <div class="filter__text-item">
+                            <div class="filter__text-title">
+                                <h4 >Patio armchair, blue</h4>
+                                <span class="filter__text-description">Within 10 days</span>
+                            </div>
+                            <span class="filter__text-price">386 €</span>
+                        </div>
+                        <p class="filter__textbox-txt">Armchair in scandinavian design upholstered with fabric Miss pattern. Backrest with decorative buttons. Legs in natural wood.</p>
+                        <a href="" class="filter__textbox-btn">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.filter__result -->
+        </div>
+    </section>
+<!--Конец секции фильтр-->
 
 <!--Начало секции lookbook-->
     <section class="lookbook-section">
