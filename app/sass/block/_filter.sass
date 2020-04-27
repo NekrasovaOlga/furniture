@@ -25,11 +25,17 @@
             &::before
                 top: 50%
                 transform: translate(0,-50%)
+    &__contain
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.3s
     &__material
         display: flex
         flex-direction: column
-        padding: 14px 0 24px 24px
         color: $graylight
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.3s
         font-size: 0.75em
         line-height: 30px
         opacity: 0.7
@@ -61,7 +67,7 @@
     &__box
         display: flex
         justify-content: space-between
-        margin-bottom: 108px
+        margin-bottom: 128px
         &-img
             width: 250px
             height: 176px
@@ -102,6 +108,7 @@
         &-btn
             font-size: 0.8em
             color: $gray
+            font-weight: 600
 
 input[type='checkbox']:checked + .filter__list-box
     &::after
@@ -112,3 +119,9 @@ input[type='checkbox']:checked + .filter__material-item
         display: block
     &::before
         border-color: $red      
+input[type='checkbox']:checked ~ .filter__material
+    max-height: 40em
+    padding: 14px 0 24px 24px
+
+input[type='checkbox']:checked ~ .filter__contain
+    max-height: 40em
